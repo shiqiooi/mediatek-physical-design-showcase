@@ -10,20 +10,6 @@ The objective was to independently learn and validate the RTL-to-GDSII workflow,
 
 **Tools:** Icarus Verilog 12.0, Yosys, OpenROAD Flow Scripts, Nangate45, KLayout 0.30.12.
 
-## Physical Layout
-
-![Final physical layout](images/final_layout.png)
-
-*Figure 1. Final GDSII layout of the 8-bit counter, viewed in KLayout.*
-
-![Layout detail](images/routing_detail.png)
-
-*Figure 2. Zoomed-in view showing placed standard cells and routed interconnect.*
-
-## Implementation Flow
-
-RTL Design → Functional Simulation → Synthesis → Floorplanning → Placement → Clock Tree Synthesis → Routing → GDSII
-
 ## Verified Results
 
 | Metric | Result |
@@ -40,6 +26,20 @@ RTL Design → Functional Simulation → Synthesis → Floorplanning → Placeme
 | Final GDSII | Generated (151 KB) |
 
 **Timing constraints:** 10 ns clock period with illustrative 2 ns input/output delays. The reported timing values are specific to this design, platform, and constraint setup.
+
+## Physical Layout
+
+![Final physical layout](images/final_layout.png)
+
+*Figure 1. Final GDSII layout of the 8-bit counter, viewed in KLayout.*
+
+![Layout detail](images/routing_detail.png)
+
+*Figure 2. Zoomed-in view showing placed standard cells and routed interconnect.*
+
+## Implementation Flow
+
+RTL Design → Functional Simulation → Synthesis → Floorplanning → Placement → Clock Tree Synthesis → Routing → GDSII
 
 ## Engineering Challenge: PDN-0185
 

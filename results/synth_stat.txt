@@ -1,0 +1,44 @@
+
+21. Printing statistics.
+
+=== counter8 ===
+
+        +----------------------------Count including submodules.
+        |        +-------------------Area including submodules.
+        |        |        +----------Local count, excluding submodules.
+        |        |        |        +-Local area, excluding submodules.
+        |        |        |        | 
+       52        -       52        - wires
+       59        -       59        - wire bits
+        5        -        5        - public wires
+       12        -       12        - public wire bits
+        5        -        5        - ports
+       12        -       12        - port bits
+        -        -        -        - memories
+        -        -        -        - memory bits
+        -        -        -        - processes
+       46   96.824       46   96.824 cells
+        1     1.33        1     1.33   AND3_X1
+        3    5.586        3    5.586   AOI21_X2
+        1    0.798        1    0.798   BUF_X1
+        2    2.128        2    2.128   BUF_X2
+        2    3.724        2    3.724   BUF_X4
+        8   36.176        8   36.176   DFF_X1
+        2     5.32        2     5.32   HA_X1
+        2    1.064        2    1.064   INV_X1
+        2    3.724        2    3.724   MUX2_X1
+        2    1.596        2    1.596   NAND2_X1
+        1    1.064        1    1.064   NAND3_X1
+        1    1.862        1    1.862   NAND3_X2
+        1     1.33        1     1.33   NAND4_X1
+        2    9.576        2    9.576   NAND4_X4
+        6    4.788        6    4.788   NOR2_X1
+        1     1.33        1     1.33   NOR4_X1
+        3    3.192        3    3.192   OAI21_X1
+        1    1.596        1    1.596   OR3_X2
+        2    5.852        2    5.852   OR3_X4
+        3    4.788        3    4.788   XOR2_X1
+
+   Chip area for module '\counter8': 96.824000
+     of which used for sequential elements: 36.176000 (37.36%)
+

@@ -1,0 +1,5 @@
+*.vcd
+*.vvp
+counter8_sim
+__pycache__/
+.DS_Store

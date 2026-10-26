@@ -1,0 +1,4 @@
+VCD info: dumpfile counter8.vcd opened for output.
+Starting Counter8 Functional Verification
+ALL TESTS PASSED (266 checks)
+designs/src/counter8/counter8_tb.v:94: $finish called at 2666000 (1ps)

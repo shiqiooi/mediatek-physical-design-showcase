@@ -19,7 +19,7 @@ The objective was to independently learn and validate the RTL-to-GDSII workflow,
 | Synthesis cell area | 96.824 µm² |
 | Core area | 1,896.580 µm² |
 | Effective core utilization | 5.1% |
-| Reported critical path slack | +7.7262 |
+| Worst reported max-delay slack | +7.73 ns |
 | Setup violations | 0 |
 | Hold violations | 0 |
 | Final detailed-routing violations | 0 |

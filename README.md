@@ -27,6 +27,24 @@ The objective was to independently learn and validate the RTL-to-GDSII workflow,
 
 **Timing constraints:** 10 ns clock period with illustrative 2 ns input/output delays. The reported timing values are specific to this design, platform, and constraint setup.
 
+## Clock Constraint Sensitivity Experiment
+
+Conducted a controlled timing experiment by tightening the clock period from **10 ns to 2 ns**, keeping the RTL, Nangate45 platform, floorplan settings, and external I/O delays unchanged.
+
+| Metric | 10 ns Baseline | 2 ns Experiment |
+|---|---:|---:|
+| Worst max-delay slack | +7.73 ns | -0.26 ns |
+| Setup violations | 0 | 17 |
+| Inspected register-to-register slack | +9.67 ns | +1.61 ns |
+| Final CORE-type instance area | 102.942 µm² | 156.674 µm² |
+| Final detailed-routing violations | 0 | 0 |
+
+**Key finding:** The 2 ns implementation completed RTL-to-GDSII but failed setup timing. The worst reported violation occurred on the `count[3]` to `terminal_count` output path, where the 2 ns external output delay left no nominal propagation-time budget.
+
+The tighter constraint was also associated with a **52.2% increase in final CORE-type instance area**, without achieving timing closure. This is not an increase in total core area.
+
+[View the full experiment, methodology and evidence](experiments/clock_constraint/clock_constraint_experiment.md).
+
 ## Physical Layout
 
 ![Final physical layout](images/final_layout.png)

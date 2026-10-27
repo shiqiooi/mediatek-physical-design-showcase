@@ -1,0 +1,9 @@
+PASS | Simulation checks passed
+PASS | Synthesized cell count matches verified baseline
+PASS | Synthesis area matches verified baseline
+PASS | Core area increased
+PASS | Worst max-delay slack is nonnegative
+PASS | No setup violations
+PASS | No hold violations
+PASS | Final routing violations zero
+PASS | Final GDS file exists

@@ -1,0 +1,3 @@
+variant,core_area_um2,utilization_pct,synth_cells,synth_area_um2,worst_slack_ns,setup_violations,hold_violations,routing_violations
+base_30pct,296.856,32.6,,,,,,
+pdnfix_5pct,1896.58,5.1,46,96.824,7.73,0,0,0
